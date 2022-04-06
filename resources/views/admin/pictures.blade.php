@@ -21,7 +21,7 @@
                 <form action="{{route('pictures.destroy', ['picture' => $picture->id])}}" method="post">
                     @csrf
                     @method('DELETE')
-                        <button class="btn btn-primary" type="submit">Удалить</button>
+                        <button class="btn btn-danger" type="submit">Удалить</button>
                 </form>
             </div>
             <span class="d-block" data-editable="anons-{{ $picture->id }}">{{ $picture->anons }}</span>

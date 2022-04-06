@@ -1,6 +1,6 @@
 {{-- Кнопка появления формы и сама форма передут в компонент --}}
 <small class="d-block text-start mt-3">
-    <a href="#" onclick="document.getElementById('form').style.display='block'; this.style.display='none'">Добавить</a>
+    <a href="javascript:" onclick="document.getElementById('form').style.display='block'; this.style.display='none'">Добавить</a>
 </small>
 
 <div id="form" class="col-md-7 col-lg-8" style="display: none">
