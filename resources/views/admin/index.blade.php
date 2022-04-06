@@ -2,7 +2,7 @@
 @section('content')
 <h1>Настройки сайта</h1>
 <div class="col-md-7 col-lg-8">
-    <form class="needs-validation" action="{{route('admin_update')}}" enctype="multipart/form-data">
+    <form class="needs-validation" action="{{route('admin_update')}}" enctype="multipart/form-data" method="post">
         @csrf
         <div class="row g-3">
             <div class="col-sm-6">

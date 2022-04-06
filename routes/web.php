@@ -25,7 +25,7 @@ Route::get('/home', [AdminController::class, 'home'])->name('home');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function(){
     Route::get('/', [AdminController::class, 'index'])->name('admin');
-    Route::get('update', [AdminController::class, 'index_update'])->name('admin_update');
+    Route::post('update', [AdminController::class, 'index_update'])->name('admin_update');
     Route::get('icons', [AdminController::class, 'iconsUpdate'])->name('icons');
     Route::resource('pictures', AdminPicturesController::class);
     Route::get('users', [AdminUserController::class, 'index'])->name('users');
